@@ -1,7 +1,5 @@
 # Kanban-Board-Task-Management
 
-# Kanban Board Task Management
-
 ## Overview
 This project is a Kanban board task management application. It allows users to create, update, and organize tasks into different columns: "To Do," "Doing," and "Done." This application is built using React for the frontend and Node.js with Express for the backend. Tasks are stored in a MongoDB database.
 
