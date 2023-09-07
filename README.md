@@ -12,20 +12,14 @@ This project is a Kanban board task management application. It allows users to c
 
 ## Live Demo
 You can access a live demo of this application at the following URL:
-[Live Demo](https://your-live-demo-url.com)
+[Live Demo](https://kanban-shiv.netlify.app/)
 
 ## Features
 - Create new tasks with titles and descriptions.
 - Drag and drop tasks between columns to change their status.
 - Edit existing tasks.
 - Delete tasks.
-
-## Installation
-1. Clone this repository.
-2. Install the required dependencies for both the frontend and backend.
-3. Configure the backend to connect to your MongoDB database.
-4. Start the frontend and backend servers.
-
+- 
 ## Usage
 - Visit the live demo URL to access the application.
 - Create tasks by clicking the "Add New Task" button.
@@ -35,6 +29,3 @@ You can access a live demo of this application at the following URL:
 
 ## Contributing
 Contributions are welcome! Please open an issue or create a pull request for any improvements or bug fixes.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
