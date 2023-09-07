@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css'
 import TaskCard from './Component/TaskCard';
 import AddTaskForm from './Component/AddTaskForm';
-import sampleData from './sampledata';
+
 
 function App() {
   const [tasks, setTasks] = useState({
@@ -19,7 +19,7 @@ function App() {
     // Fetch tasks from the server and update the tasks state
     async function fetchTasks() {
       try {
-        const response = await fetch('http://localhost:5000/Kanban/Task'); // Replace with your API endpoint
+        const response = await fetch('https://kanban-2uhq.onrender.com/Kanban/Task'); // Replace with your API endpoint
         const data = await response.json();
         setTasks(data);
       } catch (error) {
@@ -33,7 +33,7 @@ function App() {
   const addTask = async (task) => {
     try {
       // Make a POST request to your backend to add the task
-      const response = await fetch('http://localhost:5000/Kanban/create', {
+      const response = await fetch('https://kanban-2uhq.onrender.com/Kanban/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -59,7 +59,7 @@ function App() {
   const updateTask = async (updatedTask) => {
     try {
       // Make a PUT request to your backend to update the task
-      const response = await fetch(`http://localhost:5000/Kanban/update/${updatedTask._id}`, {
+      const response = await fetch(`https://kanban-2uhq.onrender.com/Kanban/update/${updatedTask._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -94,7 +94,7 @@ function App() {
   const deleteTask = async (taskId) => {
     try {
       // Make a DELETE request to your backend to delete the task
-      const response = await fetch(`http://localhost:5000/Kanban/delete/${taskId}`, {
+      const response = await fetch(`https://kanban-2uhq.onrender.com/Kanban/delete/${taskId}`, {
         method: 'DELETE',
       });
 
